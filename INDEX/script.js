@@ -27,29 +27,39 @@ function writePassword() {
 
 
 function generatePassword() {
+  // Empty Array
   var selectedCharacterTypes = []
+
+
+  //
   var paswordLength = parseInt(prompt("Password must be at least 8 characters long and less than 128"));
 
+  // If users password is too short or too long they will recieve an alert//
   if(paswordLength <8 || paswordLength >128){
+    // alert message if too short or too long//
     alert("Password must be at least a minumum of 8 characters and a maximum of 128 characters!")
+    //brings them back to begining prompt//
     return ""
   }
-  
+  //if user selects the correct amount of chararters they are given a yes or no pop up//
   if(confirm("Do you want numbers?")){
+    //pushes to next confirm message//
     selectedCharacterTypes.push(numberVal)
 
   }
 
-
+  // User picks ok or cancel, then is pushed to another confirm//
   if(confirm("Do you want lowercase?")){
     selectedCharacterTypes.push(lowerCase)
 
   }
+  //User clicks ok or cancel, then is pushed to another confirm//
 
-  if(confirm("Do you want uppercase?")){
+  if(confirm("Do you want uppercase?")){ 
     selectedCharacterTypes.push(upperCase)
 
   }
+  // User clicks ok or cancel, then is pushed in to another confirm//
   if(confirm("Do you want symbols?")){
     selectedCharacterTypes.push(specialVal)
 
