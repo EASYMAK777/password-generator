@@ -50,35 +50,51 @@ function generatePassword() {
 
   // User picks ok or cancel, then is pushed to another confirm//
   if(confirm("Do you want lowercase?")){
+    //pushes to next confirm message//
     selectedCharacterTypes.push(lowerCase)
 
   }
   //User clicks ok or cancel, then is pushed to another confirm//
 
-  if(confirm("Do you want uppercase?")){ 
+  if(confirm("Do you want uppercase?")){
+    //pushes to next confirm message// 
     selectedCharacterTypes.push(upperCase)
 
   }
   // User clicks ok or cancel, then is pushed in to another confirm//
   if(confirm("Do you want symbols?")){
+    //pushes to next confirm message//
     selectedCharacterTypes.push(specialVal)
 
+
+    //if user hits cancel on all confirms then they are given an alert letting them know they mush select at least  one character type//
   }
   if(selectedCharacterTypes.length === 0){
+    //alert//
     alert("You must select one character type")
+    //returns user back to the begining//
     return ""
   }
+
+  // console recieves alerts//
   console.log(selectedCharacterTypes)
+  // after user selects confirms the console goes through all criteria and conditions and generates random characters depending on user's selections either an empty value if they didnt meet criteria//
   var password=""
+  // for funtion will look through the list of variables and criteria (indexes 0-5) in the arrays in lnes 6-10//
   for (let i = 0; i < paswordLength; i++) {
+    //generates random character types from the arrays//
     var randomArray = Math.floor(Math.random()* selectedCharacterTypes.length)
     var randCharPosition = Math.floor(Math.random()* selectedCharacterTypes[randomArray].length)
     var randomChar = selectedCharacterTypes[randomArray][randCharPosition]
+    // console logs results//
     console.log (randomArray,randCharPosition, randomChar)
+    // password=random characters
     password +=randomChar
     
   }
+  //console logs the pasword//
   console.log(password)
+  //string of characters is presented to user//
   return password
  
   
