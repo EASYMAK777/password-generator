@@ -62,19 +62,15 @@ function generatePassword() {
   var password=""
   for (let i = 0; i < paswordLength; i++) {
     var randomArray = Math.floor(Math.random()* selectedCharacterTypes.length)
-    var randCharPosition = 
+    var randCharPosition = Math.floor(Math.random()* selectedCharacterTypes[randomArray].length)
+    var randomChar = selectedCharacterTypes[randomArray][randCharPosition]
+    console.log (randomArray,randCharPosition, randomChar)
+    password +=randomChar
     
   }
-  // var minimumCount = 8;
-  // var maximumCount = 128
-  
-  // var minimumNumbers = "";
-  // var minimumLowerCases = "";
-  // var minmumSpecialCharacters = "";
-  // var minimumUpperCases = "";
-  // var minimumSymbols = "";
-  
-  
+  console.log(password)
+  return password
+ 
   
   // Add event listener to generate button
   
