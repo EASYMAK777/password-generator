@@ -50,8 +50,6 @@ function generatePassword() {
 
 }
 
-if(lowerCase) {
-  alert("You Chose"+lowerCase+"!")
 }
 
 
