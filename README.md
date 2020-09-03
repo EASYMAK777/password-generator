@@ -28,7 +28,7 @@
 
   ## Installation
   
-  undefined
+  no intstallation required.  Just copy paste url to browser and follow prompts
 
   ## Usage
 
@@ -38,11 +38,10 @@
 
   ![github License](https://img.shields.io/badge/licence--red.svg)
 
-  ## Contributing memebers
-  undefined
+  ## Contributing members
+  Solo project by Juan Flores
 
-  ## Tests
-  just follow prompts
+  
 
   ## Questsions
 
