@@ -47,5 +47,5 @@
 
   Contact me if you have questions at [GitHub](hittp:github.com/EASYMAK777) Or, email me at jplocallawncare@gmail.com
 
-  ![password-generator-gif](./img/gif.gif);gi
+  ![password-generator-gif](./img/password-generator.gif);gi
     
