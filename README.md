@@ -1,4 +1,5 @@
 # password-generator
+  ![password-generator-gif](./img/password-generator.gif);
 
 ![(https://img.shields.io/badge/licence-readme-red)]
     
@@ -47,5 +48,4 @@
 
   Contact me if you have questions at [GitHub](hittp:github.com/EASYMAK777) Or, email me at jplocallawncare@gmail.com
 
-  ![password-generator-gif](./img/password-generator.gif);
     
